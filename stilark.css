@@ -1,0 +1,33 @@
+.item1 { grid-area: header; 
+    background-color: #ce2a8270;
+    padding: 20px 0;}
+.item2 { grid-area: menu; 
+    background-color: #e53292ee;
+    padding: 300px 0;}
+.item3 { grid-area: main; 
+    background-color: #ce2a8270;
+    padding: 250px 0;}
+.item4 { grid-area: right;
+    background-color: #ce2a8270; 
+    padding: 250px 0;}
+.item5 { grid-area: footer; 
+    background-color: #ce2a8270; 
+    padding: 20px 0;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #ce2a8200;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+ 
+  font-size: 30px;
+
+}
