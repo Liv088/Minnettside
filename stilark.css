@@ -30,14 +30,12 @@
 }
 
 .grid-container > div {
-  text-align: ;
+
  
   font-size: 30px;
 
 }
 
-
-text-align: right;
 
 
 /* mouse over link */
@@ -45,7 +43,6 @@ a:hover {
   color: hotpink;
 }
 
-}
 
 a:hover {
   text-decoration: underline;
