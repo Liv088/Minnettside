@@ -27,22 +27,17 @@
   gap: 10px;
   background-color: #ce2a8200;
   padding: 10px;
+} /* Utsende på nettsiden, grid med forskjellige farger */
+
+
+h2 {
+  font-size: 40px; /* Størrelsen på tekst(meny) */
 }
 
-.grid-container > div {
 
- 
-  font-size: 30px;
-
-}
-
-
-
-/* mouse over link */
 a:hover {
   color: hotpink;
 }
-
 
 a:hover {
   text-decoration: underline;
@@ -50,4 +45,4 @@ a:hover {
 
 a:active {
   text-decoration: underline;
-}
+} /* mouse over link=pink */
