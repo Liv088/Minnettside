@@ -2,22 +2,26 @@
     background-color: #ce2a8270;
     padding: 20px 0;
     text-align: center;}
+    
 .item2 { grid-area: menu; 
     background-color: #e53292ee;
    text-align: left;}
+
 .item3 { grid-area: main; 
     background-color: #ce2a8270;
     padding: 250px 0;
     text-align: center;}
+
 .item4 { grid-area: right;
     background-color: #ce2a8270; 
     padding: 250px 0;
     text-align: center;}
+
 .item5 { grid-area: footer; 
     background-color: #ce2a8270; 
     padding: 20px 0;
     text-align: center;}
-
+    
 .grid-container {
   display: grid;
   grid-template-areas:
