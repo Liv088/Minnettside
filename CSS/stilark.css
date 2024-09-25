@@ -6,12 +6,12 @@
 .item2 { grid-area: menu; 
     background-color: #e53292ee;
    text-align: left;
-   width: 150px;
+   width: 120px;
 height: 570px}
 
 .item3 { grid-area: main; 
     background-color: #ce2a8270;
-    padding: 250px 0;
+    padding: 250px 0; /*SIST SKIFTET */
     text-align: center;
     width: 350px;
 height: 20px;}
