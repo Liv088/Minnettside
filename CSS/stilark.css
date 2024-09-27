@@ -1,6 +1,6 @@
 .item1 { grid-area: header; 
     background-color: #ce2a8270;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;}
     
 .item2 { grid-area: menu; 
@@ -11,21 +11,21 @@ height: 570px}
 
 .item3 { grid-area: main; 
     background-color: #ce2a8270;
-    padding: 250px 0; /*SIST SKIFTET */
+    padding: 250px; /* Nå er boksene låst fast*/
     text-align: center;
-    width: 500px;
+    width: 150px;
 height: 20px;}
 
 .item4 { grid-area: right;
     background-color: #ce2a8270; 
-    padding: 250px 0;
+    padding: 250px;
     text-align: center;
-  width: 500px;
+  width: 150px;
 height: 20px;} 
 
 .item5 { grid-area: footer; 
     background-color: #ce2a8270; 
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;}
     
 .grid-container {
@@ -36,7 +36,7 @@ height: 20px;}
     'menu footer footer footer footer footer';
   gap: 5px;
   background-color: #ce2a8200;
-  padding: 10px;
+  padding: 5px;
 } /* Utsende på nettsiden, grid med forskjellige farger */
 
 h1 {
