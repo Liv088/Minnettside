@@ -13,14 +13,14 @@ height: 570px}
     background-color: #ce2a8270;
     padding: 250px 0; /*SIST SKIFTET */
     text-align: center;
-    width: 450px;
+    width: 500px;
 height: 20px;}
 
 .item4 { grid-area: right;
     background-color: #ce2a8270; 
     padding: 250px 0;
     text-align: center;
-  width: 450px;
+  width: 500px;
 height: 20px;} 
 
 .item5 { grid-area: footer; 
