@@ -34,7 +34,7 @@ height: 20px;}
     'header header header header header header'
     'menu main main main right right'
     'menu footer footer footer footer footer';
-  gap: 10px;
+  gap: 5px;
   background-color: #ce2a8200;
   padding: 10px;
 } /* Utsende på nettsiden, grid med forskjellige farger */
