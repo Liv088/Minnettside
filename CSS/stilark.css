@@ -1,7 +1,9 @@
 .item1 { grid-area: header; 
     background-color: #ce2a8270;
     padding: 20px;
-    text-align: center;}
+    text-align: center;
+    width: auto;
+    height: auto}
     
 .item2 { grid-area: menu; 
     background-color: #e53292ee;
@@ -26,7 +28,9 @@ height: 20px;}
 .item5 { grid-area: footer; 
     background-color: #ce2a8270; 
     padding: 20px;
-    text-align: center;}
+    text-align: center;
+    width: auto;
+    height: auto}
     
 .grid-container {
   display: grid;
@@ -62,7 +66,50 @@ a:active {
   text-decoration: underline;
 } /* mouse over link=pink */
 
-@media screen and (max-width: 768px) {
-  body {
+@media screen and (max-width: 768px)
+ {
       font-size: 16px;
-      
+      .item1 { grid-area: header; 
+        background-color: #ce2a8270;
+        padding: 20px;
+        text-align: center;
+        width: auto;
+        height: auto}
+        
+    .item2 { grid-area: menu; 
+        background-color: #e53292ee;
+       text-align: left;
+       width: 200px;
+    height: 570px}
+    
+    .item3 { grid-area: main; 
+        background-color: #ce2a8270;
+        padding: 250px; /* Nå er boksene låst fast*/
+        text-align: center;
+        width: 150px;
+    height: 20px;}
+    
+    .item4 { grid-area: right;
+        background-color: #ce2a8270; 
+        padding: 250px;
+        text-align: center;
+      width: 150px;
+    height: 20px;} 
+    
+    .item5 { grid-area: footer; 
+        background-color: #ce2a8270; 
+        padding: 20px;
+        text-align: center;
+        width: auto;
+        height: auto}
+        
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu footer footer footer footer footer';
+      gap: 5px;
+      background-color: #ce2a8200;
+      padding: 5px;
+    }
