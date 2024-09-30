@@ -79,7 +79,7 @@ a:active {
     .item2 { grid-area: menu; 
         background-color: #e53292ee;
        text-align: left;
-       width: 20px;
+       width: 150px;
     height: 570px}
     
     .item3 { grid-area: main; 
