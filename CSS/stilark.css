@@ -43,14 +43,13 @@ height: 20px;}
   padding: 5px;
 } /* Utsende på nettsiden, grid med forskjellige farger */
 
-<header> 
+
 h1 {
   font-size: 30px;
 }
 h2 {
   font-size: 20px; /* Størrelsen på tekst(meny) */
 }
-</header> 
 
 
 
