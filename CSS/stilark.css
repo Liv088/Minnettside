@@ -67,7 +67,8 @@ a:active {
 
 @media screen and (max-width: 768px)
  {
-      font-size: 16px;
+      
+
       .item1 { grid-area: header; 
         background-color: #ce2a8270;
         padding: 20px;
@@ -112,3 +113,4 @@ a:active {
       background-color: #ce2a8200;
       padding: 5px;
     }
+  } /* Meida slutt*/
