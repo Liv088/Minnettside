@@ -4,8 +4,9 @@
 SKAL I HTML:
 
 
-<br></br>
-<div class="box_" >    
+
+<div class="box_" > 
+  <section id="" calss=section>   
   <h1></h1> 
   <h2></h2>
 
