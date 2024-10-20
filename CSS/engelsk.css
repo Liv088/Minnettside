@@ -1,6 +1,11 @@
 * {box-sizing: border-box;}
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body { 
     margin: 0;
 
@@ -206,11 +211,10 @@ nav a:hover {
   background-color: #ffffff;
   padding: 10px;
 }
-
 .grid-container4 > div {
   background-color: rgba(255, 255, 255, 0.8);
   border: 0px solid black;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
 }
 
@@ -235,6 +239,47 @@ nav a:hover {
   font-size: 20px;
 }
 
+
+.header2 {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+
+footer {
+  background-color: #584c36;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 0;
+  margin-top: 0px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*CONTACTHTML CSS:*/
+
+.frontpage2 {
+  padding: 500px; 
+  text-align: center; /* center text*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white; /*  text color */
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  }
+
+  
 
 
 } /*Body slutt*/
