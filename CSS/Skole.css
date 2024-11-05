@@ -3,6 +3,50 @@
 body {font-family: "Lato", sans-serif;} 
 
 
+/*bar*/
+.header {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #584c36;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
+
 /* Style the tab with buttons */
 .tab {
   float: left;
@@ -46,47 +90,6 @@ body {font-family: "Lato", sans-serif;}
   height: 500px;
 }
 
-/*bar*/
-.header {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background-color: #f1f1f1;
-    padding: 20px 10px;
-  }
-  
-  .header a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
-    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  .header a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .header a.active {
-    background-color: #584c36;
-    color: white;
-  }
-  
-  .header-right {
-    float: right;
-  }
   
 
 
