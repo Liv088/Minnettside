@@ -1,72 +1,88 @@
 <!doctype html>
 <html lang="no">
-<head> 
 
-<link rel="stylesheet" href="../CSS/Skole.css">
+<head>
+
+  <link rel="stylesheet" href="../CSS/Skole.css">
 
 </head>
 
 <body>
 
+  <!--SKOLE-->
 
-    <div class="header">
-        <a href="#default" class="logo">*</a>
-        <div class="header-right">
-          <a class="active" href="Skole.html">Home</a>
-          <a href="Contact.html">Contact</a>
-          <a href="#About.html">About</a>
-        </div>
-      </div> <!--Menu bar-->
-    
-
-
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Fag')" id="defaultOpen">Fag på skolen</button>
-        <button class="tablinks" onclick="openCity(event, 'PogH')">Produkskjon og historiefortelling</button>
-        <button class="tablinks" onclick="openCity(event, 'KogP')">Konseptutvikling og programmering</button>
-        <button class="tablinks" onclick="openCity(event, 'Engelsk')">Engelsk</button>
-        <button class="tablinks" onclick="openCity(event, 'mer2')">mer</button>
-
-      
+  <div class="header">
+    <a href="#default" class="logo">*</a>
+    <div class="header-right">
+      <a class="active" href="Skole.html">Home</a>
+      <a href="Contact.html">Contact</a>
+      <a href="#About.html">About</a>
     </div>
-      
-      <div id="Fag" class="tabcontent">
-        <h3>Forskjellige fag på skolen</h3>
-        <p>Hva jeg gjør på skolen i de ulike fagene!</p>
-      </div>
-      
-      <div id="PogH" class="tabcontent">
-        <h3>Produkskjon og historiefortelling</h3>
-        <p>Hva vi gjør i faget
-          <br> <br>
-          <a href="../HTML/Fotoserie.html" target="_blank">Fotoserie</a>
-
-        </p> 
-      </div>
-      
-      <div id="KogP" class="tabcontent">
-        <h3>Konseptutvikling og programmering</h3>
-        <p>Proskjekter innenfor konseptutvikling og programmering
-
-        </p>
-      </div>
-
-      <div id="Engelsk" class="tabcontent">
-        <h3>Engelsk</h3>
-        <p> Hva gjør vi på i engelsktimene
-          <br> <br>           
-          <a href="../HTML/Touristwebpage.html" target="_blank">Touristwebpage</a>
-
-        </p>
-      </div>
-
-      <div id="mer2" class="tabcontent">
-        <h3>tekst</h3>
-        <p>ajaofwajkcawikjfa/p>
-      </div>
+  </div> <!--Menu bar-->
 
 
-      <script src="../Javascript/skole.js"> </script>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Fag')" id="defaultOpen">Fag på skolen</button>
+    <button class="tablinks" onclick="openCity(event, 'PogH')">Produkskjon og historiefortelling</button>
+    <button class="tablinks" onclick="openCity(event, 'KogP')">Konseptutvikling og programmering</button>
+    <button class="tablinks" onclick="openCity(event, 'Engelsk')">Engelsk</button>
+    <button class="tablinks" onclick="openCity(event, 'Teknologiforståelse')">Teknologiforståelse</button>
+
+
+  </div>
+
+  <div id="Fag" class="tabcontent">
+    <h3>Forskjellige fag på skolen</h3>
+    <p>Hva jeg gjør på skolen i de ulike fagene!</p>
+  </div>
+
+  <div id="PogH" class="tabcontent">
+    <h3>Produkskjon og historiefortelling</h3>
+    <p>Hva vi gjør i faget
+      <br> <br>
+      <a href="../HTML/Fotoserie.html" target="_blank">Fotoserie</a>
+
+    </p>
+  </div>
+
+  <div id="KogP" class="tabcontent">
+    <h3>Konseptutvikling og programmering</h3>
+    <p>Proskjekter innenfor konseptutvikling og programmering
+
+    </p>
+  </div>
+
+  <div id="Engelsk" class="tabcontent">
+    <h3>Engelsk</h3>
+    <p> Hva gjør vi på i engelsktimene
+      <br> <br> <p>Nettside som jeg laget!:</p> 
+      <a href="../HTML/Touristwebpage.html" target="_blank">Touristwebpage</a>
+
+    </p>
+  </div>
+
+  <div id="Teknologiforståelse" class="tabcontent">
+    <h3>Teknologiforståelse</h3>
+    <p>Teknologiforståelse faget</p>
+    <br>
+
+
+    <!--TO DO list oppgave-->
+    <p> TO-DO list laget med javascript</p>
+    <input type="text" id="taskInput" placeholder="Enter new task">
+    <button id="addTaskButton">Add Task</button>
+    <button id="removeTaskButton">Remove Task</button>
+    <ul id="taskList"></ul>
+
+
+  </div>
+
+
+  <script src="../Javascript/skole.js"> </script>
+  <script src="../Javascript/oppgaver.js"> </script>
+
 
 </body>
+
 </html>

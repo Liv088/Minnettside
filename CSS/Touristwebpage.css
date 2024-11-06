@@ -8,19 +8,20 @@ html {
 
 body { 
     margin: 0;
+  } /*Body slutt*/
 
 
-    h1 {
-      font-size: 35 px; /*FUNKER IKKE HVA FAENUUUU??!!A!*/
-    }
-    
-    h2 {
-      font-size: 30 px;
-    }
+  h1 {
+    font-size: 35px; 
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
 
-    p { font-size: 20px;
+  p { font-size: 20px;
 
-    } /*Da blir alle "p" samme størrelse */
+  } /*Da blir alle "p" samme størrelse */
 
 
 
@@ -282,4 +283,3 @@ footer a:hover {
   
 
 
-} /*Body slutt*/
