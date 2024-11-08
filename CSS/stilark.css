@@ -1,151 +1,107 @@
-body { 
-  margin: 0;
-
-
-.item1 {
-  grid-area: header;
-  background-color: #ce2a8270;
-  padding: 20px;
-  text-align: center;
-  width: auto;
-  height: auto
-}
-
-.item2 {
-  grid-area: menu;
-  background-color: #e53292ee;
-  text-align: left;
-  width: 200px;
-  height: 570px
-}
-
-.item3 {
-  grid-area: main;
-  text-align: center;
-  background-color: #ce2a8270;
-  padding: 250px;
-  /* Nå er boksene låst fast*/
-  max-width: 150px;
-  max-height: 20px;
-}
-
-.item4 {
-  grid-area: right; 
-  background-color: #ce2a8270;
-  padding: 250px;
-  text-align: center;
-  width: 150px;
-  height: 20px;
-}
-
-.item5 {
-  grid-area: footer;
-  background-color: #ce2a8270;
-  padding: 20px;
-  text-align: center;
-  width: auto;
-  height: auto
-}
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 5px;
-  background-color: #ce2a8200;
-  padding: 5px;
-}
-
-/* Utsende på nettsiden, grid med forskjellige farger */
-
-
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 20px;
-  /* Størrelsen på tekst */
-}
-
-
-
-a:hover {
-  color: hotpink;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-/* mouse over link=pink */
-
-@media screen and (max-width: 768px) {
-
-
-  .item1 {
-    grid-area: header;
-    background-color: #ce2a8270;
-    padding: 20px;
-    text-align: center;
-    width: auto;
-    height: auto
+body {
+    margin: 0;
   }
-
-  .item2 {
-    grid-area: menu;
-    background-color: #e53292ee;
-    text-align: left;
-    width: 150px;
-    height: 570px
-  }
-
-  .item3 {
-    grid-area: main;
-    background-color: #ce2a8270;
-    padding: 250px;
-    /* Nå er boksene låst fast*/
-    text-align: center;
-    width: 150px;
-    height: 20px;
-  }
-
-  .item4 {
-    grid-area: right;
-    background-color: #ce2a8270;
-    padding: 250px;
-    text-align: center;
-    width: 150px;
-    height: 20px;
-  }
-
-  .item5 {
-    grid-area: footer;
-    background-color: #ce2a8270;
-    padding: 20px;
-    text-align: center;
-    width: auto;
-    height: auto
-  }
-
+  
   .grid-container {
     display: grid;
     grid-template-areas:
       'header header header header header header'
       'menu main main main right right'
       'menu footer footer footer footer footer';
-    gap: 5px;
-    background-color: #ce2a8200;
-    padding: 5px;
+    gap: 10px; /* Increased gap */
+    background-color: #f5f5f5;
+    padding: 20px; /* Increased padding */
+    height: 800px;
   }
-}
+  
+  .item1, .item2, .item3, .item4, .item5 {
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .item1 {
+    grid-area: header;
+    background-color: #ce2a8270; /* Distinct color for header */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.5em; /* Larger font size */
+    text-align: center;
+  }
+  
+  .item2 {
+    grid-area: menu;
+    background-color: #e53292; /* Distinct menu color */
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .item3 {
+    grid-area: main;
+    background-color: #ce2a8270;
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em;
+    text-align: center;
+  }
+  
+  .item4 {
+    grid-area: right;
+    background-color: #ce2a8270;
+    color: #333;
+    text-align: center;
+  }
+  
+  .item5 {
+    grid-area: footer;
+    background-color: #ce2a8270;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'right'
+        'footer';
+    }
+  }
+    
+  h1 {
+    font-size: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
 
-/* Meida slutt*/
-
+a:active {
+  text-decoration: underline;
 }
+  
+
+
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-areas:
+        'header header header header header header'
+        'menu menu menu menu menu menu'
+        'main main main main main main'
+        'right right right right right right'
+        'footer footer footer footer footer footer';
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .item2, .item3, .item4 {
+      padding: 20px;
+      text-align: center;
+    }
+  }
