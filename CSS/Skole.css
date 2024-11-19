@@ -2,18 +2,32 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 
-body { font-family: "Lato", sans-serif;
+body {
+  margin: 0;
 }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+
+
+
 
 .header {
   position: sticky;
   top: 0;
   overflow: hidden;
   background-color: #f1f1f1;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .header a {
@@ -21,7 +35,7 @@ body { font-family: "Lato", sans-serif;
   display: block;
   color: black;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
@@ -31,8 +45,7 @@ body { font-family: "Lato", sans-serif;
 }
 
 .header a.logo {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 .header a:hover {
@@ -53,6 +66,7 @@ body { font-family: "Lato", sans-serif;
 
 /* Style the tab with buttons */
 .tab {
+  font-family: 'Times New Roman', Times, serif;
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
@@ -62,6 +76,7 @@ body { font-family: "Lato", sans-serif;
 
 /* Style the actual buttons inside the tab */
 .tab button {
+  font-family: 'Times New Roman', Times, serif;
   display: block;
   background-color: inherit;
   color: black;

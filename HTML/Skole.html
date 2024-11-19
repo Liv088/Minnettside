@@ -5,14 +5,16 @@
 
   <link rel="stylesheet" href="../CSS/Skole.css">
 
+
 </head>
 
 <body>
 
+
   <!--SKOLE-->
 
   <div class="header">
-    <a href="#default" class="logo">*</a>
+    <a href="#default" class="logo"> <img src="../Bilder1/cat(me).jpg" alt="super silly kitten:3" height="50px" width="50px"> </a>
     <div class="header-right">
       <a class="active" href="Skole.html">Home</a>
       <a href="Contact.html">Contact</a>
@@ -23,13 +25,11 @@
 
 
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Fag')" id="defaultOpen"> <u>Fag på skolen</u> </button>
-    <button class="tablinks" onclick="openCity(event, 'PogH')">Produkskjon og historiefortelling</button>
+    <button class="tablinks" onclick="openCity(event, 'Fag')"id="defaultOpen"> <u>Fag på skolen</u> </button>
+    <button class="tablinks" onclick="openCity(event, 'PogH')">Produksjon og historiefortelling</button>
     <button class="tablinks" onclick="openCity(event, 'KogP')">Konseptutvikling og programmering</button>
     <button class="tablinks" onclick="openCity(event, 'Engelsk')">Engelsk</button>
     <button class="tablinks" onclick="openCity(event, 'Teknologiforståelse')">Teknologiforståelse</button>
-
-
   </div>
 
   <div id="Fag" class="tabcontent">
@@ -63,8 +63,11 @@
   </div>
 
   <div id="Teknologiforståelse" class="tabcontent">
+
     <h3>Teknologiforståelse</h3>
-    <p>Teknologiforståelse faget</p>
+    <p> I Teknologiforståelse faget lærer vi ulike kode språk, 
+      akkuratt nå lærer vi javascript. <br> Under kan du se noen 
+      javascript proskjekter som jeg har laget</p>
     <br>
 
 
@@ -74,7 +77,16 @@
     <button id="addTaskButton">Add Task</button>
     <button id="removeTaskButton">Remove Task</button>
     <ul id="taskList"></ul>
+<br>
 
+    <p>Stein Saks Papir</p>
+  <div class="choices">
+    <button onclick="playGame('stein')">🪨 Stein</button>
+    <button onclick="playGame('saks')">✂️ Saks</button>
+    <button onclick="playGame('papir')">📄 Papir</button>
+  </div>
+  <div class="result" id="result"></div>
+  <div class="score" id="score"></div>
 
   </div>
 

@@ -1,4 +1,4 @@
-//oppgave i teknologiforståelse. TODO list
+//oppgave i teknologiforståelse. TODO list og Stein saks papir
 
 document.getElementById("addTaskButton").addEventListener("click", addTask);
 
@@ -30,3 +30,32 @@ document.getElementById("taskInput").addEventListener("keypress", function(event
         addTask();
     }
 });
+
+
+//stein saks papir
+let playerScore = 0;
+let computerScore = 0;
+
+function playGame(playerChoice) {
+  const choices = ['stein', 'saks', 'papir'];
+  const computerChoice = choices[Math.floor(Math.random() * 3)];
+
+  let resultText = '';
+
+  if (playerChoice === computerChoice) {
+    resultText = `Uavgjort! Du valgte ${playerChoice} og datamaskinen valgte ${computerChoice}.`;
+  } else if (
+    (playerChoice === 'stein' && computerChoice === 'saks') ||
+    (playerChoice === 'saks' && computerChoice === 'papir') ||
+    (playerChoice === 'papir' && computerChoice === 'stein')
+  ) {
+    resultText = `Du vant! ${playerChoice} slår ${computerChoice}.`;
+    playerScore++;
+  } else {
+    resultText = `Du tapte! ${computerChoice} slår ${playerChoice}.`;
+    computerScore++;
+  }
+
+  document.getElementById('result').textContent = resultText;
+  document.getElementById('score').textContent = `Stillingen: Du ${playerScore} - ${computerScore} Datamaskinen`;
+}
