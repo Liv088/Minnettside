@@ -1,22 +1,67 @@
+<!doctype html>
 
-html {
-  scroll-behavior: smooth;
+<!--
+GRID CONTAINER UTEN RIGHT
 
-}
+HTML:
+
+  <div class="grid-container">
+
+    <div class="item1">
+      <h1> Skole </h1>
+    </div>
+
+    <div class="item2">
+      <table>
+
+        <ul>
+          <ud>
+            <h2>Meny</h2>
+          </ud>
+        </ul>
+
+        <ul>
+          <ud>
+            <a href="HTML/HobbyerOgInteresser.html" target="_blank">Hobbyer og Interesser</a>
+          </ud>
+
+        </ul>
+        <ul>
+          <ud>
+            <a href="HTML/Skole.html" target="_blank">Skole</a>
+          </ud>
+
+        </ul>
+        <ul>
+          <ud>
+            <a href="HTML/Logg.html" target="_blank">Logg</a>
+         </ul>
+
+        </ud>
+    <ul>
+      <ud>
+        <a href="HTML/Plan.html" target="_blank">Plan</a>
+     </ul> 
+      </ud>
+
+  </table>
+    </div>
+
+    <div class="item3">
+
+    </div>
 
 
-body {
-  margin: 0;
-}
+    <div class="item5">
 
-  h3 {
-    font-size: 30px;
-  }
+    </div>
 
-  p {
-    font-size: 17px;
-  }
+  </div> 
 
+-->
+
+<!--
+I CSS:
 
 .grid-container {
     display: grid;
@@ -68,60 +113,5 @@ body {
     text-align: center;
   }
 
-  
 
-    /* Media query for responsive design */
- @media (max-width: 768px) {
-      .grid-container {
-        grid-template-areas:
-          'header'
-          'menu'
-          'main'
-          'right'
-          'footer';
-      }
-    }
-      
-    h1 {
-      font-size: 30px;
-    }
-    
-    h2 {
-      font-size: 20px;
-    }
-    
-    a:hover {
-      color: hotpink;
-      text-decoration: underline;
-    }
-  
-  a:active {
-    text-decoration: underline;
-  }
-    
-  
-  
-@media screen and (max-width: 768px) {
-      .grid-container {
-        grid-template-areas:
-          'header header header header header header'
-          'menu menu menu menu menu menu'
-          'main main main main main main'
-          'right right right right right right'
-          'footer footer footer footer footer footer';
-        gap: 10px;
-        padding: 10px;
-      }
-    
-      .item2, .item3, .item4 {
-        padding: 20px;
-        text-align: center;
-      }
-    }
-
-
-
-
-
-
-
+-->

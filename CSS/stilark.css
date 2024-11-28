@@ -22,7 +22,7 @@ body {
   
   .item1 {
     grid-area: header;
-    background-color: #ce2a8270; /* Distinct color for header */
+    background-color: #e7bdd4; /* Distinct color for header */
     color: #ffffff; /* White text for contrast */
     font-size: 1.5em; /* Larger font size */
     text-align: center;
@@ -30,14 +30,14 @@ body {
   
   .item2 {
     grid-area: menu;
-    background-color: #e53292; /* Distinct menu color */
+    background-color: #dd7db2; /* Distinct menu color */
     color: #ffffff;
     text-align: left;
   }
   
   .item3 {
     grid-area: main;
-    background-color: #ce2a8270;
+    background-color: #e7bdd4;
     color: #333; /* Darker text for readability */
     font-size: 1.1em;
     text-align: center;
@@ -45,14 +45,14 @@ body {
   
   .item4 {
     grid-area: right;
-    background-color: #ce2a8270;
+    background-color: #e7bdd4;
     color: #333;
     text-align: center;
   }
   
   .item5 {
     grid-area: footer;
-    background-color: #ce2a8270;
+    background-color: #e7bdd4;
     color: #ffffff;
     text-align: center;
   }
