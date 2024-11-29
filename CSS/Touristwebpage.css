@@ -29,7 +29,7 @@ body {
 .frontpage {
   padding: 150px; 
   text-align: center; /* center text*/
-  background-image:url(../Bilder/Glasgow2.jpg);
+  background-image:url(../BilderTW/Glasgow2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
