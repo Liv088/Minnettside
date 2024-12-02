@@ -4,8 +4,10 @@ html {
 
 }
 
+* {box-sizing: border-box}
 
 body {
+  height: 100%;
   margin: 0;
 }
 
@@ -58,7 +60,31 @@ body {
     font-size: 1.1em;
     text-align: center;
   }
-  
+
+
+    /* Style tab links */
+.tablink {
+  background-color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #c5c5c5;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
 
   
   .item5 {
@@ -69,6 +95,28 @@ body {
   }
 
   
+
+
+
+
+
+  /*Logg:*/
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
 
     /* Media query for responsive design */
  @media (max-width: 768px) {
