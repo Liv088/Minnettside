@@ -33,17 +33,42 @@ body {
     grid-area: menu;
     background-color: #dd7db2; /* Distinct menu color */
     color: #ffffff;
-    text-align: left;
+    
+  }
 
-    a:hover {
-      color: rgb(255, 255, 255);
-      text-decoration: underline;
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .btn-menu .button {
+    font-family: 'Times New Roman', Times, serif;
+      background-color: #dd7db2; /* Green */
+      border: 1px solid #dd7db2;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+
+    }
+
+  .btn-group .button:not(:last-child) {
+      border-bottom: none; /* Prevent double borders */
+    }
+    
+  .btn-menu .button:hover {
+      background-color: #cd5999;
     }
   
-  a:active {
-    text-decoration: underline;
-  }
-  }
+
+ 
+  
   
   .item3 {
     grid-area: main;

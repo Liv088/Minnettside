@@ -11,43 +11,18 @@ HTML:
       <h1> Skole </h1>
     </div>
 
-    <div class="item2">
-      <table>
+      <div class="item2">
 
-        <ul>
-          <ud>
-            <h2>Meny</h2>
-          </ud>
-        </ul>
-
-        <ul>
-          <ud>
-            <a href="HTML/HobbyerOgInteresser.html" target="_blank">Hobbyer og Interesser</a>
-          </ud>
-
-        </ul>
-        <ul>
-          <ud>
-            <a href="HTML/Skole.html" target="_blank">Skole</a>
-          </ud>
-
-        </ul>
-        <ul>
-          <ud>
-            <a href="HTML/Logg.html" target="_blank">Logg</a>
-         </ul>
-
-        </ud>
-    <ul>
-      <ud>
-        <a href="HTML/Plan.html" target="_blank">Plan</a>
-     </ul> 
-      </ud>
-
-  </table>
-    </div>
-
-    <div class="item3">
+        <div class="btn-menu">
+          <button class="button"><h2>Meny</h2></button>
+          <button class="button"><a href="HobbyerOgInteresser.html">Hobbyer og Interesser</a></button> 
+          <button class="button"><a href="Skole.html">Skole</a></button>
+          <button class="button"><a href="Logg.html">Logg</a></button>
+          <button class="button"><a href="Plan.html">Plan</a></button>
+        </div>
+  </div>
+  
+  <div class="item3">
 
     </div>
 
@@ -71,9 +46,9 @@ I CSS:
       'header header header header header header'
       'menu main main main main main'
       'menu footer footer footer footer footer';
-    gap: 10px; /* Increased gap */
+    gap: 10px; 
     background-color: #f5f5f5;
-    padding: 20px; /* Increased padding */
+    padding: 20px; 
     height: 800px;
   }
   
@@ -85,7 +60,7 @@ I CSS:
   
   .item1 {
     grid-area: header;
-    background-color: #e7bdd4; /* Distinct color for header */
+    background-color: #e7bdd4; /* color for header */
     color: #ffffff; /* White text for contrast */
     font-size: 1.5em; /* Larger font size */
     text-align: center;
@@ -95,9 +70,40 @@ I CSS:
     grid-area: menu;
     background-color: #dd7db2; /* Distinct menu color */
     color: #ffffff;
-    text-align: left;
+    
   }
-  
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .btn-menu .button {
+    font-family: 'Times New Roman', Times, serif;
+      background-color: #dd7db2; /* Green */
+      border: 1px solid #dd7db2;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+
+    }
+
+  .btn-group .button:not(:last-child) {
+      border-bottom: none; /* Prevent double borders */
+    }
+    
+  .btn-menu .button:hover {
+      background-color: #cd5999;
+    }
+
+    
   .item3 {
     grid-area: main;
     background-color: #e7bdd4;
@@ -105,8 +111,6 @@ I CSS:
     font-size: 1.1em;
     text-align: center;
   }
-  
-
   
   .item5 {
     grid-area: footer;
