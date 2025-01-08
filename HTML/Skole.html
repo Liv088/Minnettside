@@ -29,17 +29,20 @@
         </div>
   </div>
 
-    <div class="item3"> 
+  <div class="item3">  
 
-      <button class="tablink" onclick="openPage('Konseptutvikling', this, '#dd7db2')">Konseptutvikling</button>
-<button class="tablink" onclick="openPage('Medie', this, '#dd7db2')" id="defaultOpen">Medie</button>
+      <button class="tablink" onclick="openPage('Konseptutvikling', this, '#dd7db2')"id="defaultOpen">Konseptutvikling</button>
+<button class="tablink" onclick="openPage('Medie', this, '#dd7db2')" >Medie</button>
 <button class="tablink" onclick="openPage('Engelsk', this, '#dd7db2')">Engelsk</button>
-<button class="tablink" onclick="openPage('mer', this, '#dd7db2')">mer</button>
+<button class="tablink" onclick="openPage('Teknologiforståelse', this, '#dd7db2')">Teknologiforståelse</button>
+<button class="tablink" onclick="openPage('Naturfag', this, '#dd7db2')">Naturfag</button>
+
 
 <div id="Konseptutvikling" class="tabcontent">
   <h3>Konseptutvikling og programmering</h3>
   <p>Konseptutvikling is where the heart is..</p>
 </div>
+
 
 <div id="Medie" class="tabcontent">
   <h3>Produksjon og historiefortelling </h3>
@@ -48,6 +51,7 @@
   </p> 
 </div>
 
+
 <div id="Engelsk" class="tabcontent">
   <h3>Engelsk</h3>
   <p>
@@ -55,13 +59,36 @@
   </p>
 </div>
 
-<div id="mer" class="tabcontent">
-  <h3>merihadkwl</h3>
+
+<div id="Teknologiforståelse" class="tabcontent">
+  <h3>Teknologiforståelse</h3>
+  <p>Who we are and what we do.</p>
+    <br> 
+    
+    <p>TO-DO list laget med javascript</p>
+    <input type="text" id="taskInput" placeholder="Enter new task">
+    <button id="addTaskButton">Add Task</button>
+    <button id="removeTaskButton">Remove Task</button>
+    <ul id="taskList"></ul>
+<br>
+
+    <p>Stein Saks Papir</p>
+  <div class="choices">
+    <button onclick="playGame('stein')">🪨 Stein</button>
+    <button onclick="playGame('saks')">✂️ Saks</button>
+    <button onclick="playGame('papir')">📄 Papir</button>
+  </div>
+  <div class="result" id="result"></div>
+  <div class="score" id="score"></div>
+  </div>
+
+</div> <!--item 3 END-->
+
+
+<div id="Naturfag" class="tabcontent">
+  <h3>Naturfag</h3>
   <p>Who we are and what we do.</p>
 </div>
-
-
-    </div> <!--Item 3 END-->
 
 
     <div class="item5">
@@ -72,6 +99,8 @@
 
 
 <script src="../Javascript/skole.js"> </script>
+<script src="../Javascript/oppgaver.js"> </script>
+
 
 
 </body>
