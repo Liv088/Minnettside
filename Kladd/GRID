@@ -19,6 +19,7 @@ HTML:
           <button class="button"><a href="Skole.html">Skole</a></button>
           <button class="button"><a href="Logg.html">Logg</a></button>
           <button class="button"><a href="Plan.html">Plan</a></button>
+          <button class="button"><a href="HTML/Spill.html">Spill</a></button>
         </div>
   </div>
   
