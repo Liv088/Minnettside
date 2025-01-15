@@ -98,7 +98,6 @@ p {
     background-color: #265231; /* Distinct menu color */
     color: #ffffff;
     position: absolute;
-    top: 0;
     left: 0;
     transform: translateX(-100%); /* Move off-screen initially */
     transition: transform 0.3s ease-in-out; /* Smooth toggle effect */
