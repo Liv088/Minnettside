@@ -1,7 +1,4 @@
 
-document.querySelector('.side-panel-toggle').addEventListener('click', () => {
-  document.querySelector('.wrapper').classList.toggle('side-panel-open');
-}); 
 
 
 function submitQuiz() {
@@ -9,8 +6,11 @@ function submitQuiz() {
       q1: 'B',
       q2: 'D',
       q3: 'D',
-      q4: 'D',
-      q5: 'D'
+      q4: 'A',
+      q5: 'D',
+      q6: 'C',
+      q7: 'B',
+      q8: 'D'
   };
 
   let score = 0;
@@ -22,5 +22,5 @@ function submitQuiz() {
   }
 
   const resultDiv = document.getElementById('result');
-  resultDiv.textContent = `You scored ${score} out of 5!`;
+  resultDiv.textContent = `You scored ${score} out of 8!`;
 }

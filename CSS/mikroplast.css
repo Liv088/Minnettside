@@ -2,197 +2,54 @@
 html {
     scroll-behavior: smooth;
 
-  
   }
   
   * {box-sizing: border-box}
   
-  body {
-    height: 100%;
-    margin: 0;
-    overflow: auto; /* Hide scrollbars */
-  }
-  
-  h1 {
-    font-size: 30px;
-    color: #ffffff;
-  }
-  
-  h2 {
-    font-size: 20px;
-  }
+body {
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
+  margin: 0;
+  overflow: auto; /* Hide scrollbars */
+}
 
 
-h3 {
-      font-size: 30px;
-    }
+
+h1 {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+h2, h3 {
+ font-family: 'Roboto', sans-serif;
+ font-size: 25px;
+}
   
 p {
-      font-size: 17px;
-    }
-
-
-    /*bar*/
-    
-  .header  {
-    height: 0;
-    display: block;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 4000;    font-style: italic;
-    font-family: 'Times New Roman', Times, serif;
-    
-  }
-  
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  .header a:hover {
-    background-color: #265231;
-    color:#265231;
-  }
-  
-  .header a.active {
-    background-color: #81c994;
-    color: #265231;
-  }
-  
-
-
-  .icon-bar { /*home button*/
-    background-color: #265231;
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    padding: 20px 10px;
-  }
-  
-  .icon-bar a {
-    background-color: #81c994; /*all of the others*/
-    float: left;
-    text-align: center;
-    padding: 20px;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
-    border-radius: 8px;
-    display: block;
-    border: 5px solid #265231;
-
-  } 
-  
-    .icon-bar a:hover {
-      background-color: #ffffff; /* Add a OUTLINE hover color */
-    }
-
-
-
-  .wrapper {
-    display: flex;
-    height: 100vh;
-  }
-  
-  .main {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  .side-panel-toggle {
-    position: fixed; /* Ensures it stays fixed on the screen */
-    top: 50%; /* Adjust as needed */
-    left: 10px; /* Adjust based on your design */
-    width: 40px;
-    height: 40px;
-    display: grid;
-    place-items: center;
-    color: #ffffff;
-    background: #3e784d;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    z-index: 1100; /* Higher than the sidebar */
-    transition: left 0.3s ease-in-out; /* Smooth transition */
+ font-size: 20px;
 }
 
-.side-panel-open .side-panel-toggle {
-    left: 210px; /* Sidebar width + small gap */
-}  
-  .side-panel-toggle:hover {
-    background: #81c994;
+.frontpage {
+  padding: 300px; 
+  text-align: center; /* center text*/
+  background-image:url(../BilderMN/mikroplastforside.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(255, 255, 255); /*  text color */
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
   }
-  
-  .sp-icon-close {
-    display: none !important;
-  }
-  
-  .side-panel {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 200px;
-    padding: 20px;
-    background: #265231;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
-    transform: translateX(-100%); /* Initially hidden */
-    transition: transform 0.3s ease-in-out;
-    z-index: 1000; /* Ensures the panel is above all content */
-}
 
-.side-panel-open .side-panel {
-    transform: translateX(0); /* Slide in */
-}  
-  .side-panel-open .sp-icon-open {
-    display: none !important;
-  }
-  
-  .side-panel-open .sp-icon-close {
-    display: initial !important;
-  }  
-    
 
-  .btn-menu .button { /*actual buttons in the menu*/
-    font-family: 'Times New Roman', Times, serif;
-      background-color: #265231; /* Green */
-      border: 1px solid #265231;
-      padding: 25px;
-      text-align: center;
-      text-decoration: none;
-      font-size: 20px;
-      cursor: pointer;
-      display: block;
-      border-radius: 8px;
-      width: 100%;
-    }
-    
-    .btn-group .button:not(:last-child) {
-      border-bottom: none; /* Prevent double borders */
-    }
-    
-    .btn-menu .button:hover {
-      background-color: #3e784d;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      font-family: 'Times New Roman', Times, serif;
-    }
-  
-    
 .grid-container {
     display: grid;
     grid-template-areas:
-      'header header header header header header'
-      'main main main main main main'
-      'main main main main main main'
-      'main main main main main main'
-      'footer footer footer footer footer footer';
+      'header'
+      'main'
+      'main'
+      'footer';
     gap: 10px; 
     background-color: #ffffff;
     padding: 20px; 
@@ -201,21 +58,19 @@ p {
   
   .item1, .item2, .item3 {
     padding: 20px;
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333; 
   }
   
   .item1 {
     grid-area: header;
-    background-color: #81c994; /* color for header */
-    color: #ffffff; /* White text for contrast */
     font-size: 1.5em; /* Larger font size */
     text-align: center;
   }  
  
   .item2 {
     grid-area: main;
-    background-color: #81c994;
-    color: #333; /* Darker text for readability */
     font-size: 1.1em;
     text-align: center;
   }
@@ -223,8 +78,8 @@ p {
   .column {
     float: left;
     width: 50%;
-    padding: 10px;
-  }
+    padding: 70px;
+    }
   
   /* Clear floats after the columns */
   .row:after {
@@ -234,14 +89,33 @@ p {
   }
   
 
+  .image-container {
+    position: relative; /* Establishes a positioning context */
+    display: inline-block; /* Ensures the container wraps the image */
+  }
+  
+  .image-container img {
+    display: block; /* Ensures no extra whitespace below the image */
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .text-overlay {
+    position: absolute; /* Position relative to the container */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Precisely centers the text */
+    color: white; /* Adjust text color */
+    font-size: 24px; /* Customize font size */
+    font-weight: bold; /* Optional bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for readability */
+  }
 
-/**NYTTHER**/
+
 .container {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
@@ -284,8 +158,6 @@ p {
 
   .item3 {
     grid-area: footer;
-    background-color: #81c994;
-    color: #ffffff;
     text-align: center;
   }
 
@@ -296,9 +168,8 @@ p {
     .grid-container {
       grid-template-areas:
         'header'
-        'menu'
         'main'
-        'right'
+        'main'
         'footer';
     }
   }
@@ -311,11 +182,10 @@ p {
 @media screen and (max-width: 768px) {
     .grid-container {
       grid-template-areas:
-        'header header header header header header'
-        'menu menu menu menu menu menu'
-        'main main main main main main'
-        'right right right right right right'
-        'footer footer footer footer footer footer';
+        'header'
+        'main'
+        'main'
+        'footer';
       gap: 10px;
       padding: 10px;
     }
