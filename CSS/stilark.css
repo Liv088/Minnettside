@@ -1,198 +1,259 @@
+
+
+html {
+  scroll-behavior: smooth;
+
+
+
+}
+
+* {box-sizing: border-box}
+
 body {
+  height: 100%;
   margin: 0;
+  overflow: auto; /* Hide scrollbars */
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #ffffff;
 }
 
 
 
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main main right'
-    'menu main main main main right'
-    'menu footer footer footer footer footer';
-  gap: 5px; /* Increased gap */
-  background-color: #f5f5f5;
-  padding: 20px; /* Increased padding */
-  height: 800px;
+h3 {
+    font-size: 20px;
+  }
+
+p {
+    font-size: 17px;
+  }
+
+
+
+
+  /*bar*/
+ 
+.header  {
+  height: 0;
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4000;    font-style: italic;
+  font-family: 'Times New Roman', Times, serif; 
 }
 
-.item1, .item2, .item3, .item4, .item5 {
-  padding: 20px;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-.item1 {
-  grid-area: header;
-  background-color: #e7bdd4; /* Distinct color for header */
-  color: #ffffff; /* White text for contrast */
-  font-size: 1.5em; /* Larger font size */
-  display: flex; /* Use Flexbox to align items */
-  align-items: center; /* Vertically align items */
-  justify-content:space-between; /* Push icon to the left and text to the center */
-}
+.header a:hover {
+  color: #f591af; /*icons hover color*/
+  background-color: #FFD3E0; /* Add a OUTLINE hover color */
+  transition: all 0.3s ease;
 
-.item1 .h1 {
-  position: absolute;
-  /* Center position relative to parent */
-  left: 50%;
-  /* Move to the center horizontally */
-  transform: translateX(-50%);
-  /* Adjust to align exactly in the center */
-  font-size: 24px;
-  text-align: center;
 }
 
 
-
-.icon-bar {
-  display: block; /* Align icon if there are multiple icons */
-  width: 5%; /* Set a specific width */
-  align-items: left;
+.icon-bar { /*home button*/
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding: 20px 10px;
+  background-color: #FFD3E0;
 }
 
 .icon-bar a {
-  display: block; /* Make the links appear below each other instead of side-by-side */
-  padding: 16px; /* Add some padding */
-  transition: all 0.3s ease; /* Add transition for hover effects */
-  color: white; /* White text color */
-  font-size: 36px; /* Increased font-size */
+  float: left;
+  text-align: center;
+  padding: 20px;
+  font-size: 36px;
+  border-radius: 8px;
+  display: block;
+  border: 5px ;
 }
 
-  .icon-bar a:hover {
-    background-color: #cd5999; /* Add a hover color */
-  }
- 
-  .active {
-    background-color: #dd7db2;; /* Add an active/current color */
-  }
 
-  .icon-bar2 {
-    display: block; /* Align icon if there are multiple icons */
-    width: 5%; /* Set a specific width */
-    align-items: left;
-  }
-  
-  .icon-bar2 a {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
-  }
-  
-    .icon-bar2 a:hover {
-      background-color: #cd5999; /* Add a hover color */
-    }
-   
-    .active {
-      background-color: #dd7db2;; /* Add an active/current color */
-    }
-  
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
 
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
 
-.item2 {
-  grid-area: menu;
-  background-color: #dd7db2; /* Distinct menu color */
+.side-panel-toggle {
+  position: fixed; /* Ensures it stays fixed on the screen */
+  top: 50%; /* Adjust as needed */
+  left: 10px; /* Adjust based on your design */
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
   color: #ffffff;
-  
+  background: #FFD3E0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  z-index: 1100; /* Higher than the sidebar */
+  transition: left 0.3s ease-in-out; /* Smooth transition */
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-family: 'Times New Roman', Times, serif;
+
+.side-panel-open .side-panel-toggle {
+  left: 210px; /* Sidebar width + small gap */
+}  
+.side-panel-toggle:hover {
+  background: #f591af;
 }
 
-.btn-menu .button {
+.sp-icon-close {
+  display: none !important;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  background: #FFD3E0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+  transform: translateX(-100%); /* Initially hidden */
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensures the panel is above all content */
+}
+
+
+.side-panel-open .side-panel {
+  transform: translateX(0); /* Slide in */
+}  
+.side-panel-open .sp-icon-open {
+  display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+  display: initial !important;
+}  
+ 
+
+
+.btn-menu .button { /*actual buttons in the menu*/
   font-family: 'Times New Roman', Times, serif;
-    background-color: #dd7db2; /* Green */
-    border: 1px solid #dd7db2;
-    color: white;
+    background-color: #FFD3E0; /* Green */
+    border: 1px solid #FFD3E0;
     padding: 25px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
-    width: 100%;
     display: block;
     border-radius: 8px;
-
+    width: 100%;
   }
-
-.btn-group .button:not(:last-child) {
+ 
+  .btn-group .button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
   }
-  
-.btn-menu .button:hover {
-    background-color: #cd5999;
+ 
+  .btn-menu .button:hover {
+    background-color: #ffbacf;
   }
 
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+ 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main'
+    'main'
+    'footer';
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 800px;
+}
+
+.item2, .item3 {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background-color:#EAF2F8;
+}
+
+
+.item2 {
+  grid-area: main;
+  color: #333; /* Darker text for readability */
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.column {
+  float: left; 
+  width: 50%;
+  padding: 70px;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 
 .item3 {
-  grid-area: main;
-  background-color: #e7bdd4;
-  color: #333; /* Darker text for readability */
-  font-size: 1.1em;
-  text-align: left;
-
-}
-
-.item4 {
-  grid-area: right;
-  background-color: #e7bdd4;
+  grid-area: footer;
   color: #333;
   text-align: center;
 }
 
-.item5 {
-  grid-area: footer;
-  background-color: #e7bdd4;
-  color: #ffffff;
-  text-align: center;
-}
 
-/* Media query for responsive design */
+
+
+
+  /* Media query for responsive design */
 @media (max-width: 768px) {
   .grid-container {
     grid-template-areas:
-      'header'
       'menu'
       'main'
       'right'
       'footer';
   }
 }
-  
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 20px;
-}
-
-
-
-
+ 
 
 @media screen and (max-width: 768px) {
   .grid-container {
     grid-template-areas:
-      'header header header header header header'
-      'menu menu menu menu menu menu'
-      'main main main main main main'
-      'right right right right right right'
-      'footer footer footer footer footer footer';
-    gap: 10px;
+    'menu'
+    'main'
+    'right'
+    'footer';
+  gap: 10px;
     padding: 10px;
   }
 
-  .item2, .item3, .item4 {
-    padding: 20px;
-    text-align: center;
-  }
 }
+
+
