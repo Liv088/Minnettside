@@ -4,108 +4,136 @@
 <head>
   <title> Skolearbeid </title>
 
-  <link rel="stylesheet" href="../CSS/Skole.css">
+  <link rel="stylesheet" href="../CSS/stilark.css"> 
+  <link rel="stylesheet" href="../CSS/Skole.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body> 
 
 
-</head> 
+  
 
-
-<body>
-
-  <div class="grid-container">
-
-    <div class="item1">
-      <h1> Skole </h1>
+  <div class="header">
+    <div class="icon-bar">  
+      <a class="active" href="../index.html"><i class="fa fa-home"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+      <a href="#"><i class="fa fa-globe"></i></a>
+      <a href="#"><i class="fa fa-trash"></i></a>
+    </div>
     </div>
 
-      <div class="item2">
 
-        <div class="btn-menu">
-          <button class="button"><h2>Meny</h2></button>
-          <button class="button"><a href="HobbyerOgInteresser.html">Hobbyer og Interesser</a></button> 
-          <button class="button"><a href="Skole.html">Skole</a></button>
-          <button class="button"><a href="Logg.html">Logg</a></button>
-          <button class="button"><a href="Plan.html">Plan</a></button>
-        </div>
-  </div>
-
-  <div class="item3">  
-
-      <button class="tablink" onclick="openPage('Konseptutvikling', this, '#dd7db2')"id="defaultOpen">Konseptutvikling</button>
-<button class="tablink" onclick="openPage('Medie', this, '#dd7db2')" >Medie</button>
-<button class="tablink" onclick="openPage('Engelsk', this, '#dd7db2')">Engelsk</button>
-<button class="tablink" onclick="openPage('Teknologiforståelse', this, '#dd7db2')">Teknologiforståelse</button>
-<button class="tablink" onclick="openPage('Naturfag', this, '#dd7db2')">Naturfag</button>
+<div class="wrapper">
+      <div class="main">
 
 
-<div id="Konseptutvikling" class="tabcontent">
-  <h3>Konseptutvikling og programmering</h3>
-  <p>Konseptutvikling is where the heart is..</p>
-</div>
+<div class="grid-container">
+       
 
+ 
+  <div class="item2">
 
-<div id="Medie" class="tabcontent">
-  <h3>Produksjon og historiefortelling </h3>
-  <p>
-    <button class="button"><a href="Fotoserie.html" target="_blank">Fotoserie Horror Bilder</a></button>
-  </p> 
-</div>
-
-
-<div id="Engelsk" class="tabcontent">
-  <h3>Engelsk</h3>
-  <p>
-    <button class="button"><a href="Touristwebpage.html" target="_blank">Touristwebpage</a></button>
-  </p>
-</div>
-
-
-<div id="Teknologiforståelse" class="tabcontent">
-  <h3>Teknologiforståelse</h3>
-  <p>Who we are and what we do.</p>
-    <br> 
+    <br><br><br><br><br><br>
+    <button class="tablink" onclick="openPage('Konseptutvikling', this, '#dd7db2')"id="defaultOpen">Konseptutvikling</button>
+    <button class="tablink" onclick="openPage('Medie', this, '#dd7db2')" >Medie</button>
+    <button class="tablink" onclick="openPage('Engelsk', this, '#dd7db2')">Engelsk</button>
+    <button class="tablink" onclick="openPage('Teknologiforståelse', this, '#dd7db2')">Teknologiforståelse</button>
+    <button class="tablink" onclick="openPage('Naturfag', this, '#dd7db2')">Naturfag</button>
     
-    <p>TO-DO list laget med javascript</p>
-    <input type="text" id="taskInput" placeholder="Enter new task">
-    <button id="addTaskButton">Add Task</button>
-    <button id="removeTaskButton">Remove Task</button>
-    <ul id="taskList"></ul>
-<br>
+    
+    <div id="Konseptutvikling" class="tabcontent">
+      <h3>Konseptutvikling og programmering</h3>
+      <p>Konseptutvikling is where the heart is..</p>
+    </div>
+    
+    
+    <div id="Medie" class="tabcontent">
+      <h3>Produksjon og historiefortelling </h3>
+      <p>
+        <button class="button"><a href="Fotoserie.html" target="_blank">Fotoserie Horror Bilder</a></button>
+      </p> 
+    </div>
+    
+    
+    <div id="Engelsk" class="tabcontent">
+      <h3>Engelsk</h3>
+      <p>
+        <button class="button"><a href="Touristwebpage.html" target="_blank">Touristwebpage</a></button>
+      </p>
+    </div>
+    
+    
+    <div id="Teknologiforståelse" class="tabcontent">
+      <h3>Teknologiforståelse</h3>
+      <p>Who we are and what we do.</p>
+        <br> 
+        
+        <p>TO-DO list laget med javascript</p>
+        <input type="text" id="taskInput" placeholder="Enter new task">
+        <button id="addTaskButton">Add Task</button>
+        <button id="removeTaskButton">Remove Task</button>
+        <ul id="taskList"></ul>
+    <br>
+    
+        <p>Stein Saks Papir</p>
+      <div class="choices">
+        <button onclick="playGame('stein')">🪨 Stein</button>
+        <button onclick="playGame('saks')">✂️ Saks</button>
+        <button onclick="playGame('papir')">📄 Papir</button>
+      </div>
+      <div class="result" id="result"></div>
+      <div class="score" id="score"></div>
+      </div>
+    
+    
+    <div id="Naturfag" class="tabcontent">
+      <h3>Naturfag</h3>
+      <p>
+        <button class="button"><a href="MikroplastNaturfag.html" target="_blank">Mikroplast Nettside</a></button>
+      </p> 
+    </div>
+        
+  </div> <!--END item 2-->
 
-    <p>Stein Saks Papir</p>
-  <div class="choices">
-    <button onclick="playGame('stein')">🪨 Stein</button>
-    <button onclick="playGame('saks')">✂️ Saks</button>
-    <button onclick="playGame('papir')">📄 Papir</button>
-  </div>
-  <div class="result" id="result"></div>
-  <div class="score" id="score"></div>
-  </div>
 
-
-<div id="Naturfag" class="tabcontent">
-  <h3>Naturfag</h3>
-  <p>
-    <button class="button"><a href="MikroplastNaturfag.html" target="_blank">Mikroplast Nettside</a></button>
-  </p> 
-</div>
-
-</div> <!--item 3 END-->
-
-
-
-    <div class="item5">
+    <div class="item3">
       <p>&copy; 2024 Minnettside(av Liv) | All Rights Reserved</p>
     </div>
+ 
+  </div> <!--Gridcontainer END-->
+</div> <!--Class main END (det som er utenfor side pannel skal inni her)-->
 
-  </div> <!--gridcontainer END-->
+
+<button class="side-panel-toggle" type="button">
+<span class="material-icons sp-icon-open">keyboard_double_arrow_left</span>
+<span class="material-icons sp-icon-close">keyboard_double_arrow_right</span>
+</button>
 
 
+<div class="side-panel">
+
+<div class="btn-menu">
+<br> <br><br> <br><br> <br>
+<h2>Meny</h2>
+<button class="button"><a href="HTML/HobbyerOgInteresser.html">Hobbyer og Interesser</a></button>
+<button class="button"><a href="HTML/Skole.html">Skole</a></button>
+<button class="button"><a href="HTML/Logg.html">Logg</a></button>
+<button class="button"><a href="HTML/Plan.html">Plan</a></button>
+<button class="button"><a href="HTML/Spill.html">Spill</a></button>
+</div>
+</div>
+
+</div> <!--Wrapper END (all content skal være inni her)-->
+
+
+<script src="../Javascript/javascript.js"> </script>
 <script src="../Javascript/skole.js"> </script>
 <script src="../Javascript/oppgaver.js"> </script>
 
-
-
 </body>
-
 </html>
