@@ -14,7 +14,7 @@
 }
 
   .button:hover {
-    background-color: #f591af;
+    background-color: #ffbacf;
 
 }
  
@@ -23,7 +23,7 @@
 
     /* Style tab links */
 .tablink {
-  background-color: #646668;
+  background-color: #FFD3E0;
   float: left;
   border: none;
   outline: none;
@@ -35,7 +35,7 @@
 }
 
 .tablink:hover {
-  background-color: #c5c5c5;
+  background-color: #ffbacf;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -68,7 +68,7 @@
   }
   
   tr:nth-child(even) {
-    background-color: #dd7db2;
+    background-color: #ffbacf;
     
   }
 

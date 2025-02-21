@@ -204,7 +204,7 @@ p {
 
 .item2 {
   grid-area: main;
-  color: #333; /* Darker text for readability */
+  color: #333; /* Darker text0 for readability */
   font-size: 1.1em;
   text-align: center;
 }
